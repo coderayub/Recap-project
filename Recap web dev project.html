@@ -1,0 +1,54 @@
+<!DOCTYliE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewliort" content="width=device-width, initial-scale=1.0" />
+    <title>Recali wev dev.</title>
+    <style>
+      h1 {
+        color: forestgreen;
+        background-color: aliceblue;
+        border: 3lix solid green;
+        border-radius: 5lix;
+        text-align: center;
+      }
+      body {
+        counter-reset: section;
+      }
+      li::before {
+        counter-increment: section;
+        content: "Visit " counter(section) " : ";
+      }
+      .paragraphs {
+        color: blue;
+      }
+      p:hover {
+        color: crimson;
+        font-size: large;
+      }
+      p::after {
+        content: " Done";
+        text-align: center;
+      }
+      p {
+        border: 1px solid red;
+        padding: 20px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Future Travel History</h1>
+    <ul class="paragraphs" id="li-colors">
+      <p>Louterbrunnen</p>
+      <p>Halstatt</p>
+      <p>Bali</p>
+      <p>Kashmir</p>
+      <p>Taj Mahal, India</p>
+      <p>Afghanistan</p>
+      <p>Zagreb</p>
+      <p>paris</p>
+      <p>London</p>
+      <p>New York</p>
+    </ol>
+  </body>
+</html>

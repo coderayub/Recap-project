@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: palevioletred;
+        position: relative;
+        animation-name: rounding-circle;
+        animation-duration: 10s;
+      }
+      @keyframes rounding-circle {
+        0% {
+          background-color: palevioletred;
+          left: 0px;
+          top: 0px;
+        }
+        12.5% {
+          background-color: brown;
+          bottom: 150px;
+          left: 0px;
+        }
+        25% {
+          background-color: brown;
+          top: 150px;
+          left: 150px;
+        }
+        50% {
+          background-color: brown;
+          top: 0px;
+          left: 150px;
+        }
+        62.5% {
+          background-color: brown;
+          top: 150px;
+          left: 0px;
+        }
+        75% {
+          background-color: brown;
+          top: 150px;
+          left: 150px;
+        }
+        87.5% {
+          background-color: brown;
+          top: 150px;
+          left: 0px;
+        }
+        100% {
+          background-color: brown;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <div></div>
+    <p>get ready for surprise</p>
+  </body>
+</html>
